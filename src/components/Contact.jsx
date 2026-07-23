@@ -21,7 +21,8 @@ export default function Contact() {
     <FaEnvelope className="text-cyan-400 text-3xl" />
     <div>
       <p className="text-gray-400 text-sm">Email</p>
-      <p className="font-semibold">aditya@example.com</p>
+      <p className="font-semibold">pratapsinghaditya076@gmail.com
+      </p>
     </div>
   </div>
 
@@ -29,7 +30,7 @@ export default function Contact() {
     <FaPhone className="text-cyan-400 text-3xl" />
     <div>
       <p className="text-gray-400 text-sm">Phone</p>
-      <p className="font-semibold">+91 9876543210</p>
+      <p className="font-semibold">+91 8429400771</p>
     </div>
   </div>
 
