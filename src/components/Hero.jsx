@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="mt-8 flex gap-5">
 
 <a
-  href="/Aditya_Pratap_Singh_Resume.pdf"
+ href="/Aditya_Pratap_Singh_Resume%20%283%29.pdf"
   download
   className="bg-cyan-500 px-8 py-3 rounded-xl hover:bg-cyan-600 hover:scale-105 duration-300 inline-block"
 >
