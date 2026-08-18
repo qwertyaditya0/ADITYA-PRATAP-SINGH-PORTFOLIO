@@ -42,8 +42,8 @@ export default function Hero() {
 
           <div className="mt-8 flex gap-5">
 
- <a
-  href="/ADITYA RESUME.pdf"
+<a
+  href="/Aditya_Pratap_Singh_Resume.pdf"
   download
   className="bg-cyan-500 px-8 py-3 rounded-xl hover:bg-cyan-600 hover:scale-105 duration-300 inline-block"
 >
