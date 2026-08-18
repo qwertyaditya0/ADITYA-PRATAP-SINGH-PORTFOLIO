@@ -1,4 +1,5 @@
 import portfolio from "../assets/portfolio.png";
+import futurepath from "../assets/futurepath.png";
 
 const projects = [
   {
@@ -6,6 +7,14 @@ const projects = [
     desc: "Modern portfolio built using React, Vite and Tailwind CSS with responsive design, smooth scrolling, animations and resume download.",
     github: "https://github.com/qwertyaditya0/ADITYA-PRATAP-SINGH-PORTFOLIO",
     live: "#",
+    image: portfolio,
+  },
+  {
+    title: "Future Path Education",
+    desc: "Education counseling and admission assistance platform with college prediction, college finder, scholarship guidance, counseling booking, chatbot and lead generation features.",
+    github: "https://github.com/qwertyaditya0/FuturePath",
+    live: "https://future-path-eight.vercel.app/",
+    image: futurepath,
   },
 ];
 
@@ -20,16 +29,16 @@ export default function Projects() {
           Projects
         </h2>
 
-        <div className="flex justify-center">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-slate-800 rounded-2xl p-6 shadow-xl hover:scale-105 duration-300 w-full max-w-md"
+              className="bg-slate-800 rounded-2xl p-6 shadow-xl hover:scale-105 duration-300"
             >
               <img
-                src={portfolio}
-                alt="Portfolio"
-                className="h-40 w-full object-cover rounded-xl mb-5"
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full object-cover rounded-xl mb-5"
               />
 
               <h3 className="text-2xl font-bold mb-3">
