@@ -1,95 +1,248 @@
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+
+import {
+  ArrowUpRight,
+  Send,
+} from "lucide-react";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-slate-900 text-white py-20 px-6"
+      className="bg-slate-950 text-white py-24 px-6 sm:px-10"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-5xl font-bold text-center text-cyan-400 mb-16">
-          Contact Me
-        </h2>
+        {/* ================= HEADER ================= */}
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="text-center mb-16">
 
-          {/* Left Side */}
-          <div className="space-y-8">
+          <p className="text-cyan-400 text-sm font-semibold uppercase tracking-[0.25em] mb-3">
+            Get In Touch
+          </p>
 
-  <div className="flex items-center gap-5 hover:translate-x-2 duration-300">
-    <FaEnvelope className="text-cyan-400 text-3xl" />
-    <div>
-      <p className="text-gray-400 text-sm">Email</p>
-      <p className="font-semibold">pratapsinghaditya076@gmail.com
-      </p>
-    </div>
-  </div>
+          <h2 className="text-4xl sm:text-5xl font-bold">
+            Let's <span className="text-cyan-400">Connect</span>
+          </h2>
 
-  <div className="flex items-center gap-5 hover:translate-x-2 duration-300">
-    <FaPhone className="text-cyan-400 text-3xl" />
-    <div>
-      <p className="text-gray-400 text-sm">Phone</p>
-      <p className="font-semibold">+91 8429400771</p>
-    </div>
-  </div>
+          <div className="w-16 h-1 bg-cyan-400 mx-auto mt-5 rounded-full"></div>
 
-  <div className="flex items-center gap-5 hover:translate-x-2 duration-300">
-    <FaMapMarkerAlt className="text-cyan-400 text-3xl" />
-    <div>
-      <p className="text-gray-400 text-sm">Location</p>
-      <p className="font-semibold">Greater Noida, India</p>
-    </div>
-  </div>
+          <p className="text-gray-400 max-w-2xl mx-auto mt-6 leading-7">
+            Have a project, opportunity, or just want to talk about
+            technology? Feel free to reach out.
+          </p>
 
-  <div className="flex gap-6 pt-6 text-4xl">
-<a
-  href="https://github.com/qwertyaditya0"
-  target="_blank"
-  rel="noreferrer"
-  className="hover:text-cyan-400 hover:scale-125 duration-300"
->
-  <FaGithub />
-</a>
+        </div>
 
-<a
-  href="https://www.linkedin.com/in/aditya-pratap-singh-bb965b2a0/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-cyan-400 hover:scale-125 duration-300"
->
-  <FaLinkedin />
-</a>
-  </div>
+        {/* ================= CONTENT ================= */}
 
-</div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
 
-          {/* Right Side */}
-        <form className="bg-slate-800 p-8 rounded-2xl shadow-2xl hover:shadow-cyan-500/30 duration-300">
+          {/* ================= LEFT ================= */}
 
-            <input
-              type="text"
-              placeholder="Your Name"
-             className="w-full mb-5 p-4 rounded-lg bg-slate-700 border border-slate-600 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400 duration-300"
-            />
+          <div>
 
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full mb-5 p-3 rounded-lg bg-slate-700 outline-none"
-            />
+            <h3 className="text-3xl font-bold mb-4">
+              Let's build something
+              <span className="text-cyan-400"> great.</span>
+            </h3>
 
-            <textarea
-              rows="5"
-              placeholder="Your Message"
-              className="w-full mb-5 p-3 rounded-lg bg-slate-700 outline-none"
-            ></textarea>
+            <p className="text-gray-400 leading-7 max-w-lg mb-10">
+              I'm always open to discussing new projects, software
+              development opportunities, collaborations, or interesting
+              ideas.
+            </p>
 
-           <button
-  className="w-full bg-cyan-500 py-4 rounded-xl text-lg font-semibold hover:bg-cyan-600 hover:scale-105 duration-300 shadow-lg"
->
-  Send Message 
-</button>
+            {/* Contact Details */}
+
+            <div className="space-y-6">
+
+              {/* Email */}
+              <a
+                href="mailto:pratapsinghaditya076@gmail.com"
+                className="flex items-center gap-5 group"
+              >
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-400 group-hover:bg-cyan-400 group-hover:text-slate-950 transition duration-300">
+                  <FaEnvelope />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Email
+                  </p>
+
+                  <p className="text-gray-200 font-medium group-hover:text-cyan-400 transition">
+                    pratapsinghaditya076@gmail.com
+                  </p>
+                </div>
+
+                <ArrowUpRight
+                  size={18}
+                  className="ml-auto text-gray-600 group-hover:text-cyan-400 transition"
+                />
+              </a>
+
+              {/* Phone */}
+              <a
+                href="tel:+918429400771"
+                className="flex items-center gap-5 group"
+              >
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-400 group-hover:bg-cyan-400 group-hover:text-slate-950 transition duration-300">
+                  <FaPhone />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Phone
+                  </p>
+
+                  <p className="text-gray-200 font-medium group-hover:text-cyan-400 transition">
+                    +91 8429400771
+                  </p>
+                </div>
+
+                <ArrowUpRight
+                  size={18}
+                  className="ml-auto text-gray-600 group-hover:text-cyan-400 transition"
+                />
+              </a>
+
+              {/* Location */}
+              <div className="flex items-center gap-5 group">
+
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-400">
+                  <FaMapMarkerAlt />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Location
+                  </p>
+
+                  <p className="text-gray-200 font-medium">
+                    Greater Noida, India
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Social Links */}
+
+            <div className="mt-10 pt-8 border-t border-white/5">
+
+              <p className="text-sm text-gray-500 mb-4">
+                Connect with me
+              </p>
+
+              <div className="flex gap-4">
+
+                <a
+                  href="https://github.com/qwertyaditya0"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-900 border border-white/5 text-gray-400 hover:text-cyan-400 hover:border-cyan-400/40 transition duration-300"
+                >
+                  <FaGithub size={20} />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/aditya-pratap-singh-bb965b2a0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-900 border border-white/5 text-gray-400 hover:text-cyan-400 hover:border-cyan-400/40 transition duration-300"
+                >
+                  <FaLinkedin size={20} />
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* ================= FORM ================= */}
+
+          <form
+            className="bg-slate-900/70 border border-white/5 rounded-2xl p-7 sm:p-8 shadow-2xl"
+          >
+
+            <div className="mb-6">
+
+              <h3 className="text-2xl font-bold">
+                Send a message
+              </h3>
+
+              <p className="text-gray-500 text-sm mt-2">
+                I'll get back to you as soon as possible.
+              </p>
+
+            </div>
+
+            {/* Name */}
+
+            <div className="mb-5">
+
+              <label className="block text-sm text-gray-400 mb-2">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full px-4 py-3.5 rounded-xl bg-slate-800 border border-white/5 text-white placeholder-gray-600 outline-none focus:border-cyan-400/60 focus:ring-2 focus:ring-cyan-400/10 transition duration-300"
+              />
+
+            </div>
+
+            {/* Email */}
+
+            <div className="mb-5">
+
+              <label className="block text-sm text-gray-400 mb-2">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full px-4 py-3.5 rounded-xl bg-slate-800 border border-white/5 text-white placeholder-gray-600 outline-none focus:border-cyan-400/60 focus:ring-2 focus:ring-cyan-400/10 transition duration-300"
+              />
+
+            </div>
+
+            {/* Message */}
+
+            <div className="mb-6">
+
+              <label className="block text-sm text-gray-400 mb-2">
+                Message
+              </label>
+
+              <textarea
+                rows="5"
+                placeholder="Tell me about your project..."
+                className="w-full px-4 py-3.5 rounded-xl bg-slate-800 border border-white/5 text-white placeholder-gray-600 outline-none resize-none focus:border-cyan-400/60 focus:ring-2 focus:ring-cyan-400/10 transition duration-300"
+              ></textarea>
+
+            </div>
+
+            {/* Button */}
+
+            <button
+              type="submit"
+              className="w-full flex items-center justify-center gap-2 bg-cyan-500 text-slate-950 py-3.5 rounded-xl font-semibold hover:bg-cyan-400 hover:-translate-y-0.5 transition duration-300 shadow-lg shadow-cyan-500/10"
+            >
+              <Send size={18} />
+              Send Message
+            </button>
 
           </form>
 
