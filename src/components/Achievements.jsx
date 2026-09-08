@@ -1,5 +1,5 @@
 import { Trophy, Award, ExternalLink } from "lucide-react";
-import achievement from "../assets/achievement.jpg";
+import achievement from "../assets/hacklucknow1.jpg";
 
 export default function Achievements() {
   return (
