@@ -29,16 +29,16 @@ const projects = [
 },
 
   {
-    title: "Personal Portfolio",
-    subtitle: "Developer Portfolio",
-    desc: "A responsive developer portfolio built to showcase my skills, projects, achievements and journey as a Computer Science Engineering student.",
-    github:
-      "https://github.com/qwertyaditya0/ADITYA-PRATAP-SINGH-PORTFOLIO",
-    live: "#",
-    image: portfolio,
-    featured: false,
-    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-  },
+  title: "Personal Portfolio",
+  subtitle: "Developer Portfolio",
+  desc: "A responsive developer portfolio built to showcase my skills, projects, achievements and journey as a Computer Science Engineering student.",
+  github:
+    "https://github.com/qwertyaditya0/ADITYA-PRATAP-SINGH-PORTFOLIO",
+  live: "https://adityapratapsinghrajpoot.netlify.app/",
+  image: portfolio,
+  featured: false,
+  tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+},
 ];
 
 export default function Projects() {
