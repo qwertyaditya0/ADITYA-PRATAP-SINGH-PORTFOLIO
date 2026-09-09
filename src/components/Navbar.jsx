@@ -20,10 +20,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 py-4 flex justify-between items-center">
 
         {/* ================= LOGO ================= */}
-        <a
-          href="#home"
-          className="text-2xl font-bold tracking-wide"
-        >
+       <a
+  href="#home"
+  className="text-2xl font-bold tracking-wide text-white"
+>
           Aditya<span className="text-cyan-400">.</span>
         </a>
 
