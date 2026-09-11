@@ -9,9 +9,10 @@ export default function Navbar() {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
+    { name: "DSA", link: "#dsa" },
+    { name: "Achievements", link: "#achievements" },
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
-    { name: "Achievements", link: "#achievements" },
   ];
 
   return (
@@ -20,10 +21,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 py-4 flex justify-between items-center">
 
         {/* ================= LOGO ================= */}
-       <a
-  href="#home"
-  className="text-2xl font-bold tracking-wide text-white"
->
+        <a
+          href="#home"
+          className="text-2xl font-bold tracking-wide text-white"
+        >
           Aditya<span className="text-cyan-400">.</span>
         </a>
 
